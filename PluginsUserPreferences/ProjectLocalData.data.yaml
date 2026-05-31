@@ -1,0 +1,13 @@
+data:
+  externalSources:
+    - 580fc49a-bd16-4509-86d6-faab8dc42ee4: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/UberPBRMaterial/Resources/uber_pbr.ss_graph
+    - 596c2668-17af-4d8d-bdb6-c169e3280bed: /Users/redmoon/Library/Preferences/Snap/Lens Studio/LibraryComponents/SnapDecorators@1.0.0/SnapDecorators.lspkg
+    - 60ec5fd0-f1ec-47a6-9717-5116d947a6db: /Users/redmoon/Library/Preferences/Snap/Lens Studio/LibraryComponents/SpectaclesInteractionKitExamples@0.17.2/SpectaclesInteractionKitExamples.lspkg
+    - 75c5dea3-d86f-42b0-b887-196e1ef63e10: /Users/redmoon/Library/Preferences/Snap/Lens Studio/LibraryComponents/LSTween@1.2.0/LSTween.lspkg
+    - ab054eae-c108-4542-9b3a-970ae04c2e72: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Resources/Base.png
+    - ab49ad11-f0e5-4d53-a4f0-b4c4b81cc49a: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Meshes/Resources/Sphere.mesh
+    - c056b158-44af-443e-8ef4-36b9293fc0c0: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Resources/Normal.png
+    - c94df0c2-4e1a-4eea-b33f-d51c8e23313a: /Applications/Lens Studio.app/Contents/JsPlugins/PresetsRegistry/Assets/Meshes/Resources/Cylinder.mesh
+    - cc3c18dc-0a36-48b7-a304-5864a38832ad: /Users/redmoon/Downloads/Examples/2x2 - Floor Lamp.png
+    - d92208c7-bfba-490a-b2b5-f1be80e34fa5: /Users/redmoon/Library/Preferences/Snap/Lens Studio/LibraryComponents/SpectaclesUIKit@0.1.5/SpectaclesUIKit.lspkg
+    - de182bb7-ba1f-47d8-9ea3-9a8869b0eaff: /Users/redmoon/Library/Preferences/Snap/Lens Studio/LibraryComponents/Utilities@1.0.0/Utilities.lspkg

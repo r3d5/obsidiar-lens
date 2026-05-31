@@ -1,0 +1,146 @@
+- !<AssetImportMetadata/9c27f8a1-9190-49b9-82d6-0b49b2d672b8>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 117d5851-97b7-465f-a512-bce27482dd92
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 117d5851-97b7-465f-a512-bce27482dd92
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 32465e83-9788-4ffd-836c-c501ab292f66
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/32465e83-9788-4ffd-836c-c501ab292f66>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6800ab25-a05b-41b7-b3ac-35b218029df4
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    backendUrl: false
+    centerGravity: false
+    clusterLayout: false
+    colorByFolder: false
+    debugText: false
+    dimFactor: false
+    dragThreshold: false
+    drawEdges: false
+    edgePrefab: false
+    edgeThickness: false
+    enableShowHide: false
+    graphRoot: false
+    growDuration: false
+    internetModule: false
+    labelMaxDistance: false
+    labelScale: false
+    layoutIterations: false
+    linkAttraction: false
+    linkLength: false
+    maxNodeScale: false
+    minNodeScale: false
+    nodeColorProperty: false
+    nodePrefab: false
+    nodeSpacing: false
+    panelMaxLines: false
+    panelTweenMs: false
+    panelWrapChars: false
+    passwordField: false
+    radius: false
+    repulsion: false
+    showDebug: false
+    showHideButtonObj: false
+    showPasswordField: false
+    spawnInterval: false
+    tapMaxSec: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - internetModule: !<reference.InternetModule> 00000000-0000-0000-0000-000000000000
+      nodePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      graphRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      drawEdges: false
+      edgePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      edgeThickness: 0.200000
+      backendUrl: "https://spectacles-sync-backend-production.up.railway.app"
+      radius: !<float> 60.000000
+      clusterLayout: true
+      layoutIterations: !<float> 200.000000
+      repulsion: !<float> 1.000000
+      linkAttraction: !<float> 1.000000
+      linkLength: !<float> 1.000000
+      centerGravity: 0.020000
+      minNodeScale: 0.500000
+      maxNodeScale: !<float> 2.000000
+      nodeSpacing: !<float> 20.000000
+      nodeColorProperty: Tweak_N20
+      labelScale: 0.600000
+      labelMaxDistance: !<float> 50.000000
+      colorByFolder: true
+      spawnInterval: 0.080000
+      growDuration: 0.300000
+      dimFactor: 0.150000
+      panelTweenMs: !<float> 200.000000
+      panelWrapChars: !<float> 28.000000
+      panelMaxLines: !<float> 16.000000
+      tapMaxSec: 0.350000
+      dragThreshold: !<float> 2.000000
+      showDebug: false
+      debugText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      showPasswordField: false
+      passwordField: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      enableShowHide: false
+      showHideButtonObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Asset.InternetModule internetModule {"hint":"Internet Module asset — used to GET the encrypted vault."}'
+    - '// @input Asset.ObjectPrefab nodePrefab {"hint":"3D object instantiated per note. Should contain a Text component (label)."}'
+    - '// @input SceneObject graphRoot {"hint":"Empty SceneObject the graph spawns under. Place it ~100cm in front of the camera."}'
+    - '// @input bool drawEdges {"hint":"Draw edges between linked notes. Requires an Edge Prefab when on."}'
+    - '// @input Asset.ObjectPrefab edgePrefab {"hint":"Thin cylinder (height 1 along +Y, centered) for link edges.", "showIf":"drawEdges", "showIfValue":true}'
+    - '// @input float edgeThickness = 0.2 {"hint":"Edge line thickness (X/Z scale of the cylinder). Lower = thinner. Try 0.2.", "showIf":"drawEdges", "showIfValue":true}'
+    - '// @input string backendUrl = "https://spectacles-sync-backend-production.up.railway.app" {"hint":"Backend base URL — the script appends /vault/<vaultId>."}'
+    - '// @input float radius = 60 {"hint":"Cloud radius in cm — seed sphere, and the size the clustered layout is normalized to fit."}'
+    - '// @input bool clusterLayout = true {"hint":"Cluster linked notes with a force-directed layout (computed once on load). Off = even sphere."}'
+    - '// @input float layoutIterations = 200 {"hint":"Force-solver iterations (one-time, on load). Higher = tighter clusters, slower load. 200 suits most vaults.", "showIf":"clusterLayout", "showIfValue":true}'
+    - '// @input float repulsion = 1 {"hint":"Repulsion — how hard all nodes push apart. Higher = more spread out.", "showIf":"clusterLayout", "showIfValue":true}'
+    - '// @input float linkAttraction = 1 {"hint":"Link attraction — how hard linked notes pull together. Higher = tighter clusters.", "showIf":"clusterLayout", "showIfValue":true}'
+    - '// @input float linkLength = 1 {"hint":"Ideal link length multiplier — larger = more space between connected notes.", "showIf":"clusterLayout", "showIfValue":true}'
+    - "// @input float centerGravity = 0.02 {\"hint\":\"Center gravity — gentle pull to the middle so disconnected notes don't drift off.\", \"showIf\":\"clusterLayout\", \"showIfValue\":true}"
+    - '// @input float minNodeScale = 0.5 {"hint":"Node scale multiplier for a ~0-word note."}'
+    - '// @input float maxNodeScale = 2 {"hint":"Node scale multiplier for the wordiest note."}'
+    - '// @input float nodeSpacing = 20 {"hint":"Target center-to-center gap (cm) between neighbouring nodes. The whole cloud is rescaled so density stays constant no matter how many notes you have — raise this if nodes still overlap or labels are unreadable."}'
+    - "// @input string nodeColorProperty = \"Tweak_N20\" {\"hint\":\"Material property the node color is written to. Standard PBR uses 'baseColor', but stylized graph materials use an auto-generated name — the Crafty 'Modeling Clay' material the node prefab ships with uses 'Tweak_N20'. If nodes stay one color, open the node's material in the Inspector and copy the exact name of its color property here. (baseColor/mainColor are always tried as fallbacks.)\"}"
+    - '// @input float labelScale = 0.6 {"hint":"Title label size multiplier. Labels are kept a uniform size regardless of node size; lower this if titles are too big or overlap in dense areas."}'
+    - "// @input float labelMaxDistance {\"hint\":\"Hide a node's title past this distance (cm) from the camera, so only nodes near you are labelled — declutters dense/far clusters. 0 (default) = always show every label. The cloud usually sits ~100cm away, so use values above ~100 if you enable this.\"}"
+    - '// @input bool colorByFolder = true {"hint":"Color nodes by their top-level folder (recommended — most vaults organize by folder). Off = color by first #tag. Notes with neither get a neutral grey."}'
+    - '// @input float spawnInterval = 0.08 {"hint":"Seconds between each node appearing (cascade, in note-creation order)."}'
+    - '// @input float growDuration = 0.3 {"hint":"Seconds each node takes to grow to full size as it spawns."}'
+    - '// @input float dimFactor = 0.15 {"hint":"How dark unrelated nodes/edges go when one is selected (0 = black, 1 = no dimming)."}'
+    - "// @input float panelTweenMs = 200 {\"hint\":\"Milliseconds for a node's info panel (TextPanel child) to grow in/out when tapped.\"}"
+    - '// @input float panelWrapChars = 28 {"hint":"Max characters per line in the info panel — text is word-wrapped to this width (3D text has no auto-wrap). Lower = narrower column."}'
+    - "// @input float panelMaxLines = 16 {\"hint\":\"Max lines in the info panel — extra text is truncated with '…'. Set to match panel height so text never spills past the bottom.\"}"
+    - '// @input float tapMaxSec = 0.35 {"hint":"Longest a pinch can be held and still count as a node tap. A longer/dragged pinch moves the cloud instead of selecting (prevents false clicks)."}'
+    - '// @input float dragThreshold = 2 {"hint":"How far (cm) the cloud may move during a pinch and still count as a tap. Move further than this and the pinch is treated as a drag (reposition the graph) instead of opening the card. Lower = more sensitive to drags."}'
+    - '// @input bool showDebug {"hint":"Write status to an on-lens Text (decoded / fetching / decrypted / errors)."}'
+    - '// @input Component.Text debugText {"hint":"Text component that shows status on-device.", "showIf":"showDebug", "showIfValue":true}'
+    - '// @input bool showPasswordField {"hint":"Show a masked password field (dots) as you type. Needs a Text below."}'
+    - '// @input Component.Text passwordField {"hint":"Text component that displays the password as dots while typing.", "showIf":"showPasswordField", "showIfValue":true}'
+    - '// @input bool enableShowHide {"hint":"Add a pinch button to toggle showing/hiding the typed password."}'
+    - '// @input SceneObject showHideButtonObj {"hint":"Togglable button SceneObject (SpectaclesUIKit RectangleButton) — toggle on to reveal the password, off to hide.", "showIf":"enableShowHide", "showIfValue":true}'
